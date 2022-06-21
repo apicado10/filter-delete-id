@@ -31,8 +31,14 @@ class EmployeeList extends React.Component{
             <table>
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Name</th>
                         <th>Job</th>
+                        <th>B-Day</th>
+                        <th>Department</th>
+                        <th>Comment</th>
+                        <th>Active</th>
+                        <th>Gender</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,6 +48,11 @@ class EmployeeList extends React.Component{
                              id={employee.id} 
                              name={employee.name}
                              job={employee.job} 
+                             date={employee.date}
+                             department={employee.department}
+                             textarea={employee.textarea} 
+                             activo={employee.activo} 
+                             gender={employee.gender}    
                              fire={this.fireEmployee}
                              />
                         ))}

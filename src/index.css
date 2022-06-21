@@ -87,6 +87,10 @@ a {
   background-color: transparent;
 }
 
+.Container{margin:20px;}
+form{max-width: 500px; margin: auto;}
+textarea{ min-height: 200px;}
+
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -927,8 +931,20 @@ select::-ms-expand {
 label {
   font-weight: 600;
   max-width: 100%;
-  display: block;
   margin: 1rem 0 0.5rem;
+  display: inline;
+}
+
+.gender label{
+  margin-right: 20px;
+}
+
+.gender input{
+  margin-right: 5px;
+}
+
+.active input{
+  margin-left: 10px;
 }
 
 @media (min-width: 600px) {
